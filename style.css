@@ -11,7 +11,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 180px 0px;
+    padding: 10px 180px 0px;
     position: absolute;
     top: 0;
     left: 0;
@@ -21,36 +21,37 @@ header{
 header img{
     width: 13%;
 }
-header select{
+ select{
 outline: none;
 background-color: transparent;
 color: white;
-padding: 6px 10px 6px 30px;
+padding: 6px 17px 6px 35px;
 font-size: 15px;
 margin-right: 20px;
 border-radius: 2px;
+cursor: pointer;
 }
-header select:focus{
+ select:focus{
     outline: 1px solid white;
 }
-header .selectmenu{
+.selectmenu{
     position: relative;
 }
-header .selectmenu i{
+.selectmenu i{
     color: white;
     position: absolute;
     top: 10px;
     left: 10px;
 }
 header a{
-    padding: 8px 15px;
+    padding: 8px 20px;
     font-weight: 500;
     font-size: 15px;
     text-decoration: none;
     background-color: #e20013;
     color: white;
     border-radius: 5px;
-    transition: .5s;
+    transition: .4s;
 }
 header a:hover{
     color: white;
@@ -58,3 +59,202 @@ header a:hover{
     background-color: #7e000b;
 }
 /* -------------------------header style--------------------- */
+.Frist_sec{
+    min-height: 100vh;
+    background-image: url(./images/headerimg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 8px solid #222;
+}
+.Frist_sec::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#000,transparent);
+}
+.Frist_sec::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    background: linear-gradient(to top,#000,transparent);
+}
+.Frist_sec div{
+    text-align: center;
+    z-index: 2;
+}
+.Frist_sec h2{
+    font-size: 45px;
+     margin-top: 80px;
+     color: white;
+     line-height: 74.5px;
+     font-weight: bolder;
+     letter-spacing: 0;
+}
+.Frist_sec h3{
+    font-size: 25px;
+    color: white;
+    margin: 12px 0 16px;
+}
+.Frist_sec p{
+    font-size: 20px;
+    max-width: 16px 0;
+    color: white;
+    font-weight: 500;
+}
+.Frist_sec form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.Frist_sec form input[type="email"]{
+padding: 12px 50px 12px 9px;
+background-color: rgba(29, 27, 27, 0.397);
+width: 40%;
+outline: none;
+border: 1px solid gray;
+font-size: 17px;
+margin-right: 10px;
+border-radius: 5px;
+transition: .4s;
+}
+.Frist_sec form input[type="email"]::placeholder{
+    text-indent: 10px;
+}
+.Frist_sec form button{
+    padding: 10px 30px;
+    font-weight: 600;
+    border: none;
+    background-color: #e20013;
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+}
+/* ------------------second section------- */
+.videoSec,.videoSec2{
+    color: white;
+    border-bottom: 8px solid #222;
+    padding: 60px 180px;
+    text-align: left;
+}
+.videoSec h3,.imgSec h3,.videoSec2 h3{
+    font-size: 43px;
+    font-weight: 600;
+}
+.videoSec p,.imgSec p,.videoSec2 p{
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.videoSec .viedioSecdiv{
+    position: relative;
+}
+.videoSec .viedioSecdiv img{
+    width: 500px;
+}
+.videoSec .viedioSecdiv video{
+    position: absolute;
+    width: 370px;
+    top: 75px;
+    left: 70px;
+    z-index: -1;
+}
+/* ----------------------third section----------------- */
+.imgSec{
+    color: white;
+    border-bottom: 8px solid #222;
+    padding: 40px 180px;
+}
+.imgSec img{
+   width: 500px;
+}
+.videoSec2 .viedioSecdiv2{
+    position: relative;
+}
+.videoSec2 .viedioSecdiv2 img{
+    width: 600px;
+}
+.videoSec2 .viedioSecdiv2 video{
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    z-index: -1;
+}
+/* ----------------last sec-------- */
+.lastsec{
+    padding: 50px 150px;
+    border-bottom: 8px solid #222;
+}
+.lastsec h3{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin: 50px 0;
+    font-weight: 900;
+}
+.list{
+    width: 95%;
+    margin: auto;
+}
+.accordion{
+    background-color: #303030;
+    color: white;
+    cursor: pointer;
+    padding: 13px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    transition: .5s;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordion:hover{
+    background-color: #615f5f;
+}
+.accordion::after{
+    content: '\002B';
+    color: white;
+    float: right;
+    font-size: 40px;
+    margin-left: 5px;
+    transition: .5s;
+}
+.active::after{
+    content: '\0078';
+    font-size: 40px;
+    margin-left: 5px;
+    transition: .5s;
+}
+.answer{
+    transition: .5s;
+    background-color: #303030;
+    font-size: 23px;
+    padding: 0px 20px;
+    max-height: 0;
+    color: white;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+.answer p{
+    padding-top: 20px;
+}
+footer a,footer p, footer h5{
+    color: gray;
+}
