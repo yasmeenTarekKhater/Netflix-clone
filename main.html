@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="images/netflix-icon-icon-2048x2048-yj41gpvr.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/253b27cc50.js" crossorigin="anonymous"></script>
     <title>Netflix App</title>
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+  
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-dark my-nav">
         <div class="container-fluid">
@@ -36,13 +75,28 @@
           </div>
         </div>
     </nav>
-    <section class="container">
-           <div class="row mt-5">
-            <button class="btn btn-dark col-2 mx-2">Watch</button>
-            <button class="btn btn-dark col-2"> MyList</button>
-           </div>
+    <section class="container-fluid" id="Fsecmovi">
+      <div class="mainFsec">
+        <h3 id="title"></h3>
+        <div class="row mt-5 buttond">
+            <a href="#" class="col-2 mx-2"><button class="btn btn-dark w-100 ">Watch</button></a>
+           <a href="#" class="col-2"><button class="btn btn-dark w-100 "> MyList</button></a> 
+        </div>
+        <p id="desc" class="w-25"></p>
+      </div>
     </section>
-    <footer class="bg-transparent  pt-5 w-100" style="position: fixed;bottom: 0px; border-top: 8px solid gray;">
+    <section class="sliderSec">
+    <h2>Comedy Movies</h2>
+    <div class="sliderDiv">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="ComedyMovies">
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    </section>
+    <footer class="bg-dark pt-5 w-100" style="position: static;bottom: 0px;">
         <!-- Grid container -->
         <div class="container p-4">
           <!-- Section: Form -->
@@ -156,6 +210,24 @@
         <!-- Grid container -->
         
       </footer>
-      <!-- Footer -->
+      <!-- Footer --> 
+      <script src="api.js"></script>
+      <script src="bootstrap/bootstrap.bundle.min.js"></script>
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      centeredSlides: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    
 }
 .my-nav a{
     color: white;
@@ -11,3 +12,21 @@ body{
     color: red;
     transform: scale(1.2);
 }
+.mainFsec h3,.mainFsec p{
+    margin:0px 10px;
+    padding-top: 60px;
+    color: white;
+}
+#Fsecmovi{
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 460px;
+}
+footer a,footer p, footer h5{
+    color: gray;
+}
+.swiper-container {
+    width: 600px;
+    height: 300px;
+  }
