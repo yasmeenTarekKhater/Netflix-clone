@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+.my-nav a{
+    color: white;
+    transition: .5s;
+    padding-left: 50px;
+    font-weight: bold;
+}
+.my-nav a:hover{
+    color: red;
+    transform: scale(1.2);
+}

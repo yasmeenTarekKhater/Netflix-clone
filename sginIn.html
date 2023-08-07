@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sgin In page</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="sginin.css">
+    <link rel="shortcut icon" href="images/netflix-icon-icon-2048x2048-yj41gpvr.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/253b27cc50.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="Frist_sec">
+        <div class="sginin_div col-lg-4 col-md-7 col-9">
+            <h1>Sgin In</h1>
+            <form  onkeydown="valid()" action="main.html"  method="post" autocomplete="off">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <p id="emailError" style="color: red;"></p>
+                <input type="password" name="pass" id="pass" placeholder="Password" required>
+                <p id="passwordError" style="color: red;"></p>
+                <button type="submit" id="submitBtn">Sign In</button>
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-5 d-flex align-items-center px-2">
+                            <input type="checkbox" name="Rememberme" id="" style="width: 30px;">
+                            <label for="">Remember me</label>
+                        </div>
+                        <a href="#" class="col-5">Need Help ?</a>
+                    </div>
+                </div>
+            </form>
+            <div class="sginin-content-div pt-5">
+            <h5>New to Netflix ? <a href="#">Sgin Up now.</a></h5>
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a> </p>
+            </div>
+            
+        </div>
+       </section> 
+    <script src="sginin.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
